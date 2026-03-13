@@ -5,7 +5,7 @@
 ## Tier Selection
 
 Tier 2 – Object Detection
-This project uses deep learning for **object detection** to automatically identify and classify vehicle damage (dents, scratches, broken lights, etc.) in images.  
+This project uses deep learning for object detection to automatically identify and classify vehicle damage (dents, scratches, broken lights, etc.) in images.  
 It involves dataset preprocessing, model training, evaluation, and deployment for automated inspection workflows, making it more advanced than a basic proof-of-concept (Tier 1) but not requiring large-scale production or multiple AI modules (Tier 3).
 
 ## Project Overview
