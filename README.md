@@ -3,6 +3,14 @@
 - Course: ITAI 1378 – Computer Vision & AI  
 - Tier: Tier 2 – Object Detection
 
+## Tier Selection
+
+**Selected Tier:** Tier 2 – Object Detection  
+
+**Justification:**  
+This project uses deep learning for **object detection** to automatically identify and classify vehicle damage (dents, scratches, broken lights, etc.) in images.  
+It involves dataset preprocessing, model training, evaluation, and deployment for automated inspection workflows, making it more advanced than a basic proof-of-concept (Tier 1) but not requiring large-scale production or multiple AI modules (Tier 3).
+
 ## Project Overview
 
 This project develops an AI-powered system capable of detecting vehicle damage from images using deep learning and computer vision techniques. The system identifies damaged areas such as dents, broken lights, and cracked windshields.
@@ -39,16 +47,13 @@ The model detects different types of vehicle damage and highlights the damaged r
 
 ## Dataset
 
-Dataset used:
+- Dataset used: Automobile Damage Detection Dataset
 
-Automobile Damage Detection Dataset
+- Source: Roboflow Universe
 
-Source: Roboflow Universe
+- Images: ~6,900 annotated images
 
-Images: ~6,900 annotated images
-
-Link:
-https://universe.roboflow.com/automobile-damage-detection
+- Link: https://universe.roboflow.com/automobile-damage-detection
 
 The dataset contains labeled images with bounding boxes indicating different types of vehicle damage.
 
@@ -56,9 +61,7 @@ The dataset contains labeled images with bounding boxes indicating different typ
 
 ## Model
 
-Object detection model:
-
-YOLOv8
+- Object detection model: YOLOv8
 
 The model is trained using transfer learning and fine-tuned on the vehicle damage dataset.
 
@@ -66,24 +69,45 @@ The model is trained using transfer learning and fine-tuned on the vehicle damag
 
 ## Metrics
 
-Primary metric
+### Primary Metric
+- **Detection Accuracy ≥ 85%**
 
-mAP@0.5
+### Secondary Metrics
+- **Damage Classification Accuracy ≥ 80%**
+- **Inference Time < 1 second per image**
 
-Secondary metrics
-
-Precision  
-Recall  
-F1-score
+These metrics evaluate the model’s ability to accurately detect and classify vehicle damage while maintaining fast inference performance suitable for real-world applications.
 
 ---
+## Week-by-Week Plan
 
-## Project Structure
+| Week | Task | Milestone |
+|-----|------|-----------|
+| Week 10 | Dataset collection | Dataset ready |
+| Week 11 | Train object detection model | Model running |
+| Week 12 | Improve accuracy | Stable performance |
+| Week 13 | Add cost estimation module | Demo ready |
+| Week 14 | Testing & documentation | Final version |
+| Week 15 | Presentation | Project demonstration |
 
-AI-Powered-Vehicle-Damage-Detection
+## Resources Needed
 
-data/ 
-docs/
-notebooks/
+### Compute
+- **Google Colab GPU**
 
+### Frameworks
+- PyTorch
+- Ultralytics YOLO
+- OpenCV
+
+### Estimated Cost
+- **$0** (using free cloud GPU resources)
+
+## Risks & Mitigation
+
+| Risk | Probability | Mitigation |
+|-----|-------------|------------|
+| Dataset too small | Medium | Use alternative datasets from Roboflow |
+| Low model accuracy | Medium | Apply data augmentation or fine-tune a larger YOLO model |
+| Training too slow | Medium | Use Google Colab GPU for faster training |
 
