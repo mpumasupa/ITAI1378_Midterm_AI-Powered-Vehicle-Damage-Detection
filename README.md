@@ -1,4 +1,4 @@
-# AI-Powered Vehicle Damage Detection
+## AI-Powered Vehicle Damage Detection
 Student: Milagros Pumasupa Terán 
 Course: ITAI 1378 – Computer Vision & AI
 Tier: Tier 2 – Object Detection
